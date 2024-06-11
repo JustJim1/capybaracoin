@@ -4,7 +4,7 @@ import logging
 
 app = Flask(__name__)
 
-TOKEN = "7487631326:AAGvx4psUbbv5yiI61xahklCXS2TaAdEsd0"  # Вставьте ваш токен полностью
+TOKEN = "7487631326:AAGvx4psUbbv5yiT61xahklCXS2TaAdEsd0"  # Ваш токен
 bot = telebot.TeleBot(TOKEN)
 
 # Настройка логирования
@@ -30,7 +30,7 @@ def getMessage():
 @app.route('/setwebhook', methods=['GET'])
 def set_webhook():
     try:
-        webhook_url = f"https://your-app-name.onrender.com/{TOKEN}"
+        webhook_url = f"https://capybaracoin.onrender.com/{TOKEN}"
         logging.info(f"Setting webhook to URL: {webhook_url}")
         s = bot.set_webhook(url=webhook_url)
         if s:
