@@ -4,7 +4,7 @@ import logging
 
 app = Flask(__name__)
 
-TOKEN = "7487631326:AAGvx4psUbbv5yiT61xahkCXS2TaAdEsd0"  # Ваш токен
+TOKEN = "7277985551:AAF81u_-kZNBDfsQWrZI-uuSg-5dMMNaljg"  # Ваш новый токен
 bot = telebot.TeleBot(TOKEN)
 
 # Настройка логирования
@@ -52,4 +52,4 @@ def send_welcome(message):
         logging.error(f"Error handling /start command: {e}")
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=10000)
+    app.run(debug=True)
