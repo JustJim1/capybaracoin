@@ -4,7 +4,7 @@ import logging
 
 app = Flask(__name__)
 
-TOKEN = "7487631326:AAGvx4psUbbv5yiT61xahklCXS2TaAdEsd0"  # Ваш токен
+TOKEN = "7487631326:AAGvx4psUbbv5yiT61xahkCXS2TaAdEsd0"  # Ваш токен
 bot = telebot.TeleBot(TOKEN)
 
 # Настройка логирования
