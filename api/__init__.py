@@ -4,8 +4,8 @@ import logging
 
 app = Flask(__name__)
 
-TOKEN = "7277985551:AAF81u_-kZNBDfsQWrZI-uuSg-5dMMNaljg"
-bot = telebot.TeleBot(TOKEN)
+TOKEN = "7277985551:AAF81u_-kZNBDfsQWrZI-uuSg-5dMMNaljg"  # Ваш токен
+bot = telebot.TeleBot(TTOKEN)
 
 # Настройка логирования
 logging.basicConfig(level=logging.INFO)
@@ -48,7 +48,6 @@ def send_welcome(message):
     try:
         logging.info(f"Received /start command from user: {message.from_user.id}")
         bot.reply_to(message, "Welcome to the CapybaraCoin farming bot!")
-        logging.info("Reply sent successfully")
     except Exception as e:
         logging.error(f"Error handling /start command: {e}")
 
